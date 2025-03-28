@@ -1,11 +1,11 @@
 package com.fiec.estoqueia.services;
 
-import com.fiec.estoqueia.business.dtos.CreateProdutoDto;
-import com.fiec.estoqueia.business.entities.Produtos;
-
+import com.fiec.estoqueia.business.dtos.ProdutoDTO;
+import com.fiec.estoqueia.business.entities.Produto;
 import java.util.List;
 
 public interface ProdutoService {
-    Produtos criaProduto(CreateProdutoDto createProdutoDto);
-    List<Produtos> listapProdutos();
+    Produto criarProduto(ProdutoDTO produto);
+    List<Produto> pegarTodosProdutos();
+    // Outros métodos da lógica de negócios (atualizar, excluir, etc.)
 }
